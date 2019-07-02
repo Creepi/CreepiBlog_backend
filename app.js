@@ -22,7 +22,7 @@ app.use(views(__dirname + '/views', {
   extension: 'html'
 }))
 
-Router.use('/api', api.routes(), api.allowedMethods())
+Router.use('/capi', api.routes(), api.allowedMethods())
 // logger
 app.use(async (ctx, next) => {
   const start = new Date()

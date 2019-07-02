@@ -5,7 +5,7 @@
   "scripts": {
     "start": "NODE_ENV=prod node bin/www",
     "dev": "NODE_ENV=dev ./node_modules/.bin/nodemon bin/www",
-    "prod": "NODE_ENV=prod pm2 start bin/www --name='CreepiBlog'",
+    "prod": "NODE_ENV=prod pm2 start bin/www -i 4 --name='CreepiBlog'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
